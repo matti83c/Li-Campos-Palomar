@@ -1,4 +1,4 @@
-# first.fm(Project Proposal)
+# first.fm (Project Proposal)
 ---
 This website is meant to be a guide for anyone looking for music recommendations or looking to get into the wider music scene. Based on a list of criteria input by the user of the website, a list of albums/artists/songs will be displayed. Each webpage will be dedicated to a different category of music.
 The website will consist of:
