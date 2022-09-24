@@ -7,3 +7,5 @@ The website will consist of:
 3. Album Recommendations Page - This page will display an album recommendation based on the criteria inputted by the user.
 4. Artist Recommendations Page - This page will display an artist recommendation based on the criteria inputted by the user.
 5. Genre Recommendations Page - This page will display a genre recommendation based on the criteria inputted by the user.
+
+Question Database: https://docs.google.com/document/d/1K8XJvrQUocwD6wTvO36ziyL0NKgVYH8sXlPyGA3GC20/edit?usp=sharing
