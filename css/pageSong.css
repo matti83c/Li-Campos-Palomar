@@ -1,4 +1,4 @@
-body{
+*, *::before, *::after{
     color: #eee9f3;
     font-family: 'Comfortaa', cursive;
 }
@@ -9,4 +9,38 @@ html{
 
 .output{
     float:right;
+}
+
+a{    
+    text-decoration:none;
+    color: #eee9f3
+}
+
+.nav{
+    padding-left: 100px;
+}
+
+.navbutton{
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 5px solid #eee9f3;
+    border-radius: 18px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px;
+    background-color: #1e1e2e;
+    transition: 0.3s;
+    display:inline-block;
+}
+
+.navbutton:hover{
+    padding: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #000000; /* color not final, just for testing */
+    transition: 0.3s;
+    margin-left: 0px;
+    margin-right: -4px;
+    margin-top: 0px;
 }

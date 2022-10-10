@@ -1,4 +1,4 @@
-body{
+*, *::before, *::after{
     color: #eee9f3;
     font-family: 'Comfortaa', cursive;
 }
