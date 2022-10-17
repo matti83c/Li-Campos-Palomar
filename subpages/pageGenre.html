@@ -20,18 +20,20 @@
 <body>
 
 	<h2> What do you want in a genre? </h2>
-	
-	
-	<b>button 1</b>
-	<b>button 2</b>
-	<b>button 3</b> <br>
 
+	<div id="chooser">
+		<div id="question">Question</div>
+		<div class="buttons">
+			<button class="button" id="1" onClick ="onClick1()">Yes</button> <!-- adds 1 alval -->
+			<button class="button" id="2" onClick ="onClick100()">No</button> <!-- adds 100 alval -->
+		</div>
+	</div>
 
 	<div class="output">
-		<h1> Genre name</h1>
-		<img src="../images/placeholder.jpg" alt="placeholder" width="300" height="300">
-		<h3> Genre Description</h3>
-		<h4> list of artists</h4>
+		<h1 id="genre"> Genre name</h1>
+		<img src="../images/placeholder.jpg" alt="placeholder" width="300" height="300" id="pic">
+		<h3 id="desc"> Genre Description</h3>
+		<h4 id="alist"> list of artists</h4>
 	</div>
 
 	<div class="nav">
@@ -42,5 +44,7 @@
 	</div>
 
 </body>
+
+<script type="text/javascript" src="../js/script.js"></script>
 
 </html>

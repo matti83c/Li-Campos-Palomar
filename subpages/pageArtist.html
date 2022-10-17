@@ -11,6 +11,7 @@
 <link rel="icon" href="../images/icon.png" type="image/gif">
 <link rel="stylesheet" href="../css/pageArtist.css">
 
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 </style> 
@@ -20,18 +21,20 @@
 <body>
 
 	<h2> What do you want in an artist? </h2>
-	
-	
-	<b>button 1</b>
-	<b>button 2</b>
-	<b>button 3</b> <br>
 
+	<div id="chooser">
+		<div id="question">Question</div>
+		<div class="buttons">
+			<button class="button" id="1" onClick ="onClick1()">Yes</button> <!-- adds 1 alval -->
+			<button class="button" id="2" onClick ="onClick100()">No</button> <!-- adds 100 alval -->
+		</div>
+	</div>
 
 	<div class="output">
-		<h1> Artist name</h1>
-		<img src="../images/placeholder.jpg" alt="placeholder" width="300" height="300">
-		<h3> Rnb </h3>
-		<h4> Active 1999-present</h4>
+		<h1 id="artist"> Artist name</h1>
+		<img src="../images/placeholder.jpg" alt="placeholder" width="300" height="300" id="pic">
+		<h3 id="genre"> Rnb </h3>
+		<h4 id="years"> Active 1999-present</h4>
 	</div>
 
 	<div class="nav">
@@ -41,5 +44,7 @@
 		<a href=../index.html class="navbutton">Go back</a>
 	</div>
 </body>
+
+<script type="text/javascript" src="../js/script.js"></script>
 
 </html>

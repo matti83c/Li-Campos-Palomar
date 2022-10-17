@@ -21,20 +21,22 @@
 
 	<h2> What do you want in a song? </h2>
 	
-	
-	<b>button 1</b>
-	<b>button 2</b>
-	<b>button 3</b> <br>
-
+	<div id="chooser">
+		<div id="question">Question</div>
+		<div class="buttons">
+			<button class="button" id="1" onClick ="onClick1()">Yes</button> <!-- adds 1 alval -->
+			<button class="button" id="2" onClick ="onClick100()">No</button> <!-- adds 100 alval -->
+		</div>
+	</div>
 
 	<div class="output">
-		<h1> Song Name </h1>
-		<h2> by Artist </h2>
-		<img src="../images/placeholder.jpg" alt="placeholder" width="300" height="300">
-		<h3> 10 hours, 59 minutes long </h3>
-		<h4> on Album Name </h4>
-		<h4> Released 2022 </h4>
-		<h4> RnB </h4>
+		<h1 id="song"> Song Name </h1>
+		<h2 id="artist"> by Artist </h2>
+		<img src="../images/placeholder.jpg" alt="placeholder" width="300" height="300" id="pic">
+		<h3 id="length"> 10 hours, 59 minutes long </h3>
+		<h4 id="album"> on Album Name </h4>
+		<h4 id="release"> Released 2022 </h4>
+		<h4 id="genre"> RnB </h4>
 	</div>
 
 	<div class="nav">
@@ -45,5 +47,7 @@
 	</div>
 	
 </body>
+
+<script type="text/javascript" src="../js/script.js"></script>
 
 </html>

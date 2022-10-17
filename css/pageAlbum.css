@@ -50,3 +50,8 @@ a{
     color:#eee9f3;
     background-color: #0c0c14;
 }
+
+#chooser{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
