@@ -1,56 +1,114 @@
-*, *::before, *::after{
-    color: #eee9f3;
+*{
+    color: #dcdcde;
     font-family: 'Comfortaa', cursive;
+    
 }
 
 html{
     background-color: #181825;
-    margin-left: auto;
-    margin-right: auto;
-    width: 750px;
+    max-height: 1080px;
 }
 
-h{
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-3698px, -3698px, 0);
+    }
+  }
+
+#content{
+    z-index: 1000;
+    margin: auto;
+    max-width: 960px;
+}
+
+h1{
+    opacity: 0;
     font-size: 70px;
+    animation: fadeIn 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    margin-bottom: -10px;
+}
+
+hr{
+    opacity:0;
+    animation: fadeIn 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#bg{
+    position: absolute;
+    z-index: -1;
+    background-image: url("../images/topster.png");
+    background-repeat: repeat;
+    height: 11094px;
+    width: 11094px;
+    opacity: 0.04;
+    transition-delay: -1s;
+    transition: 1s;
+    animation: slide 60s linear infinite;
+}
+
+#con2{
+    margin-left: -8px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position:absolute;
 }
 
 a{
     text-decoration:none;
-    color: #eee9f3
+    color: #a29bab;
 }
 
 .links{
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-}
-
-.text{
-    text-align: justify;
+    margin: unset;
+    margin-left: -8px;
+    margin-right: -18px;
+    margin-top: -12px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 30px;
+    background-color: #111117;
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .navbutton{
-    padding: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border: 5px solid #eee9f3;
-    border-radius: 18px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-top: 10px;
-    background-color: #1e1e2e;
+    padding: 10px;
+    margin: 40px;
     transition: 0.3s;
-    display:inline-block;
 }
 
 .navbutton:hover{
-    padding: 40px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #000000; /* color not final, just for testing */
+    color: #fff;
     transition: 0.3s;
-    margin-left: 0px;
-    margin-right: -4px;
-    margin-top: 0px;
 }
 
+.text{
+    font-size: 20px;
+    text-align: justify;
+    animation: fadeIn 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#msg{
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}

@@ -1,5 +1,5 @@
 *, *::before, *::after{
-    color: #eee9f3;
+    color: #dcdcde;
     font-family: 'Comfortaa', cursive;
 }
 
@@ -13,7 +13,7 @@ html{
 
 a{    
     text-decoration:none;
-    color: #eee9f3
+    color: #a29bab;
 }
 
 .nav{
