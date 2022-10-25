@@ -19,14 +19,30 @@
 
 <body>
 
-	<h2> What do you want in a song? </h2>
+	<div id="con2">
+		<div id="bg"></div>
+	</div>
 	
-	<div id="chooser">
-		<div id="question">Question</div>
-		<div class="buttons">
-			<button class="button" id="1" onClick ="onClick1()">Yes</button> <!-- adds 1 alval -->
-			<button class="button" id="2" onClick ="onClick100()">No</button> <!-- adds 100 alval -->
-		</div>
+	<div class="nav">
+		<a href=../index.html class="navbutton">HOME</a>
+		<a href=pageArtist.html class="navbutton">ARTISTS</a>
+		<a href=pageGenre.html class="navbutton">GENRES</a>
+		<a href=pageAlbum.html class="navbutton">ALBUMS</a>
+	</div>
+	
+	<div id="content">
+
+			<h2 class="title"> What do you want in a song? </h2>
+	
+			<div id="chooser">
+				<div id="question">What genre do you prefer?</div>
+				<div class="buttons">
+					<button class="button" id="1" onClick ="onClick1()">Pop</button> <!-- adds 1 alval -->
+					<button class="button" id="2" onClick ="onClick100()">Hiphop</button> <!-- adds 100 alval -->
+					<button class="button" id="3" onClick ="Sel3()">Indie</button> <!-- for the first question -->
+					<button class="button" id="4" onClick ="Sel4()">RnB</button> <!-- for the first question -->
+					<button class="button" id="5" onClick ="Sel5()">Rock</button>
+			</div>
 	</div>
 
 	<div class="output">
@@ -37,13 +53,6 @@
 		<h4 id="album"> on Album Name </h4>
 		<h4 id="release"> Released 2022 </h4>
 		<h4 id="genre"> RnB </h4>
-	</div>
-
-	<div class="nav">
-		<a href=pageAlbum.html class="navbutton">Go to Albums</a>
-		<a href=pageArtist.html class="navbutton">Go to Artists</a>
-		<a href=pageGenre.html class="navbutton">Go to Genres</a>
-		<a href=../index.html class="navbutton">Go back</a>
 	</div>
 	
 </body>
