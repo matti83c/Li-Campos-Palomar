@@ -1,0 +1,65 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>first.fm | albums</title>
+
+<meta charset="UTF-8">
+<meta name="author" content="Mateo Campos, Satya Palomar">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="revised" content="23-09-2022">
+
+<link rel="icon" href="../images/icon.png" type="image/gif">
+<script type="text/javascript" src="../js/script.js"></script>
+<link rel="stylesheet" href="../css/pageAlbum.css">
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+</style> 
+
+</head>
+
+<body>
+	<div id="con2">
+		<div id="bg"></div>
+	</div>
+
+	<div class="nav">
+		<a href=../index.html class="navbutton">HOME</a>
+		<a href=pageArtist.html class="navbutton">ARTISTS</a>
+		<a href=pageGenre.html class="navbutton">GENRES</a>
+		<a href=pageSong.html class="navbutton">SONGS</a>
+	</div>
+	
+	<div id="content">
+
+
+		<h2 class="title preload" id="capt"> What do you want in an album? </h2>
+
+		<div id="chooser">
+			<div id="question">Which genre do you prefer?</div>
+			<div class="buttons">
+				<button class="button" id="1" onClick ="onClick1()">Pop</button> <!-- adds 1 alval -->
+				<button class="button" id="2" onClick ="onClick100()">Hip-Hop</button> <!-- adds 100 alval -->
+				<button class="button" id="3" onClick ="Sel3()">Indie</button> <!-- for the first question -->
+				<button class="button" id="4" onClick ="Sel4()">RnB</button> <!-- for the first question -->
+				<button class="button" id="5" onClick ="Sel5()">Rock</button>  <!-- for the first question -->
+			</div>
+		</div>
+
+		<div class="output preload" id="out">
+			<h1 id="title"> Album title </h1>
+			<h2 id="artist"> by Artist </h2>
+			<img src="" alt="placeholder" width="300" height="300" id="pic">
+			<h3 id="length"> 10 hours, 59 minutes long </h3>
+			<h4 id="tlength"> 5,000 tracks</h4>
+			<h4 id="release"> Released 2022 </h4>
+			<h4 id="genre"> RnB </h4>
+		</div> 
+	</div>
+
+</body>
+
+<script type="text/javascript" src="../js/script.js"></script>
+
+</html>
