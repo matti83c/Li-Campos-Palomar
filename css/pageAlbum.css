@@ -50,10 +50,6 @@ html{
     100% {opacity: 1;}
 }
 
-.output{
-    float:right;
-}
-
 a{    
     text-decoration:none;
     color: #a29bab
@@ -103,10 +99,18 @@ header{
     animation-delay: 1s;
     animation: fadeIn 1s;
     animation-fill-mode: forwards;
+    transition: 0.3s;
+}
+
+.preload * {
+    transition: none !important;
 }
 
 .output{
     opacity: 0;
+    transition-delay: 1s;
+    transition: 1s;
+    pointer-events: none
 }
 
 .navbutton{
@@ -128,5 +132,5 @@ header{
 
 #chooser{
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: 0.5s;
 }

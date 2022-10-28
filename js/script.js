@@ -9,7 +9,13 @@ var tlength = document.getElementById("tlength");
 var release = document.getElementById("release");
 var genre = document.getElementById("genre");
 var question = document.getElementById("question");
+var out = document.getElementById("out");
+var img = document.getElementById("pic");
+var cap = document.getElementById("capt");
 
+$(window).load(function() {
+    $("body").removeClass("preload");
+});
 
 //////////////////////////////////////
 //------------BUTTONS---------------//
@@ -202,15 +208,259 @@ function showNextQuestion(qval){
 
 
 function output(oval){
+    out.style.opacity = 1;
+    out.style.pointerEvents = "unset";
     chooser.remove();
-    if(oval == 2){ //like bts
-        chooser.remove();
-        title.innerHTML = "Hiiiiii";
-        artist.innerHTML = "Hiiiiii";
-        slength.innerHTML = "Hiiiiii";
-        tlength.innerHTML = "Hiiiiii";
-        release.innerHTML = "Hiiiiii";
-        genre.innerHTML = "Hiiiiii";
+    cap.remove();
+    if(sel == 1){
+        if(oval == 2 || oval == 202){ //like bts
+            chooser.remove();
+            img.src="../images/Sticker - NCT 127.jpg"
+            title.innerHTML = "Sticker";
+            artist.innerHTML = "NCT 127";
+            slength.innerHTML = "11 Songs";
+            tlength.innerHTML = "38:46";
+            release.innerHTML = "Sept 17, 2021";
+            genre.innerHTML = "Experimental K-Pop";
+        }
+
+        if(oval == 102 || oval == 301){ //like blackpink
+            chooser.remove();
+            img.src="../images/Max & Match - LOONA.jpg"
+            title.innerHTML = "Max & Match";
+            artist.innerHTML = "LOONA / ODD EYE CIRCLE";
+            slength.innerHTML = "8 Songs";
+            tlength.innerHTML = "25:18";
+            release.innerHTML = "Oct 31, 2017";
+            genre.innerHTML = "K-Pop";
+        }
+
+        if(oval == 101){ //like billie
+            chooser.remove();
+            img.src="../images/Positions - Ariana Grande.jpg";
+            title.innerHTML = "Positions";
+            artist.innerHTML = "Ariana Grande";
+            slength.innerHTML = "14 Songs";
+            tlength.innerHTML = "41:14";
+            release.innerHTML = "Oct 30, 2020";
+            genre.innerHTML = "Pop";
+        }
+
+        if(oval == 201){//ariana
+            chooser.remove();
+            img.src="../images/Positions - Ariana Grande.jpg";
+            title.innerHTML = "CRASH";
+            artist.innerHTML = "CHARLI XCX";
+            slength.innerHTML = "12 Songs";
+            tlength.innerHTML = "33:51";
+            release.innerHTML = "Mar 18, 2022";
+            genre.innerHTML = "Alt Pop";
+        }
+
+        if(oval == 301){//mariah
+            chooser.remove();
+            img.src="../images/Off The Wall - Michael Jackson.jpg";
+            title.innerHTML = "Off The Wall";
+            artist.innerHTML = "Michael Jackson";
+            slength.innerHTML = "10 Songs";
+            tlength.innerHTML = "42:24";
+            release.innerHTML = "Aug 10, 1979";
+            genre.innerHTML = "Pop";
+        }
+
+        if(oval == 400){ //none of the above
+            chooser.remove();
+            img.src="../images/How To Be A Human Being - Glass Animals.jpg";
+            title.innerHTML = "How To Be A Human Being";
+            artist.innerHTML = "Glass Animals";
+            slength.innerHTML = "11 Songs";
+            tlength.innerHTML = "43:13";
+            release.innerHTML = "Aug 26, 2016";
+            genre.innerHTML = "Alt Pop";
+        }
     }
 
+    if(sel == 2){
+        if(oval == 1){//tyler
+            chooser.remove();
+            img.src="../images/Die Lit - Playboi Carti.jpg";
+            title.innerHTML = "Die Lit";
+            artist.innerHTML = "Playboi Carti";
+            slength.innerHTML = "19 Songs";
+            tlength.innerHTML = "57:47";
+            release.innerHTML = "May 11, 2018";
+            genre.innerHTML = "Trap";
+        }
+
+        if(oval == 101){//ye
+            chooser.remove();
+            img.src="../images/MM...FOOD - MF DOOM.jpg";
+            title.innerHTML = "MM..FOOD";
+            artist.innerHTML = "MF DOOM";
+            slength.innerHTML = "15 Songs";
+            tlength.innerHTML = "48:54";
+            release.innerHTML = "Nov 16, 2004";
+            genre.innerHTML = "Abstract Hip Hop";
+        }
+
+        if(oval == 201){//em
+                chooser.remove();
+                img.src="../images/Madvillainy - Madvillain, MF DOOM.jpg";
+                title.innerHTML = "Madvillainy";
+                artist.innerHTML = "Madvillain, MF DOOM, Madlib";
+                slength.innerHTML = "22 Songs";
+                tlength.innerHTML = "46:22";
+                release.innerHTML = "Mar 24, 2004";
+                genre.innerHTML = "Abstract Hip Hop";
+        }
+
+        if(oval == 300){// no1
+            chooser.remove();
+            img.src="../images/Icedancer - Bladee.jpg";
+            title.innerHTML = "Icedancer";
+            artist.innerHTML = "Bladee";
+            slength.innerHTML = "19 Songs";
+            tlength.innerHTML = "43:01";
+            release.innerHTML = "Dec 29, 2018";
+            genre.innerHTML = "Experimental Hip Hop";
+        }
+    }
+    
+    if(sel == 3){
+        if(oval == 1){//clairo
+            chooser.remove();
+            img.src="../images/Salad Days - Mac Demarco.jpg";
+            title.innerHTML = "Salad Days";
+            artist.innerHTML = "Mac Demarco";
+            slength.innerHTML = "11 Songs";
+            tlength.innerHTML = "34:46";
+            release.innerHTML = "April 1, 2014";
+            genre.innerHTML = "Indie";
+        }
+
+        if(oval == 101){//mac demarco
+            chooser.remove();
+            img.src="../images/Typical of Me - Laufey.jpg";
+            title.innerHTML = "Typical of Me";
+            artist.innerHTML = "Laufey";
+            slength.innerHTML = "7 Songs";
+            tlength.innerHTML = "21:00";
+            release.innerHTML = "April 30, 2021";
+            genre.innerHTML = "Abstract Hip Hop";
+        }
+
+        if(oval == 201){//tv girl
+                chooser.remove();
+                img.src="../images/In The Aeroplane Over The Sea - Neutral Milk Hotel.jpg";
+                title.innerHTML = "In The Aeroplane Over The Sea";
+                artist.innerHTML = "Neutral Milk Hotel";
+                slength.innerHTML = "11 Songs";
+                tlength.innerHTML = "39:54";
+                release.innerHTML = "Feb 20, 1998";
+                genre.innerHTML = "Indie";
+        }
+
+        if(oval == 300){// no1
+            chooser.remove();
+            img.src="../images/Unexpectedly - Megumi Acorda.jpg";
+            title.innerHTML = "Unexpectedly";
+            artist.innerHTML = "Megumi Acorda";
+            slength.innerHTML = "4 Songs";
+            tlength.innerHTML = "17:30";
+            release.innerHTML = "Mar 17, 2018";
+            genre.innerHTML = "Indie";
+        }
+    }
+
+    if(sel == 4){
+        if(oval == 1){//lacy
+            chooser.remove();
+            img.src="../images/Freudian - Daniel Caesar.jpg";
+            title.innerHTML = "Freudian";
+            artist.innerHTML = "Daniel Caesar";
+            slength.innerHTML = "10 Songs";
+            tlength.innerHTML = "44:51";
+            release.innerHTML = "Aug 25, 2017";
+            genre.innerHTML = "RnB";
+        }
+
+        if(oval == 101){//caesar
+            chooser.remove();
+            img.src="../images/Gemini Rights - Steve Lacy.jpg";
+            title.innerHTML = "Gemini Rights";
+            artist.innerHTML = "Steve Lacy";
+            slength.innerHTML = "10 Songs";
+            tlength.innerHTML = "35:01";
+            release.innerHTML = "July 15, 2022";
+            genre.innerHTML = "RnB";
+        }
+
+        if(oval == 201){//frankie
+                chooser.remove();
+                img.src="../images/Nectar - Joji.jpg";
+                title.innerHTML = "Nectar";
+                artist.innerHTML = "Joji";
+                slength.innerHTML = "18 Songs";
+                tlength.innerHTML = "53:14";
+                release.innerHTML = "Sep 25, 2020";
+                genre.innerHTML = "RnB";
+        }
+
+        if(oval == 300){// no1
+            chooser.remove();
+            img.src="../images/Dawn FM - The Weeknd.jpg";
+            title.innerHTML = "Dawn FM";
+            artist.innerHTML = "The Weeknd";
+            slength.innerHTML = "16 Songs";
+            tlength.innerHTML = "51:49";
+            release.innerHTML = "Jan 6, 2022";
+            genre.innerHTML = "RnB";
+        }
+    }
+
+    if(sel == 5){
+        if(oval == 1){//paras
+            chooser.remove();
+            img.src="../images/Siamese Dream - The Smashing Pumpkins.jpg";
+            title.innerHTML = "Siamese Dream";
+            artist.innerHTML = "The Smashing Pumpkins";
+            slength.innerHTML = "13 Songs";
+            tlength.innerHTML = "01:02:00";
+            release.innerHTML = "July 27, 1993";
+            genre.innerHTML = "Rock";
+        }
+
+        if(oval == 101){//deftones
+            chooser.remove();
+            img.src="../images/loveless - my bloody valentine.jpg";
+            title.innerHTML = "loveless";
+            artist.innerHTML = "my bloody valentine";
+            slength.innerHTML = "11 Songs";
+            tlength.innerHTML = "48:35";
+            release.innerHTML = "Nov 4, 1991";
+            genre.innerHTML = "Rock";
+        }
+
+        if(oval == 201){//nirvana
+                chooser.remove();
+                img.src="../images/Pinkerton - Weezer.jpg";
+                title.innerHTML = "Pinkerton";
+                artist.innerHTML = "Weezer";
+                slength.innerHTML = "10 Songs";
+                tlength.innerHTML = "34:37";
+                release.innerHTML = "Sep 24, 1996";
+                genre.innerHTML = "Rock";
+        }
+
+        if(oval == 300){// no1
+            chooser.remove();
+            img.src="../images/Twin_fantasy.jpg";
+            title.innerHTML = "Twin Fantasy (2018)";
+            artist.innerHTML = "Car Seat Headrest";
+            slength.innerHTML = "10 Songs";
+            tlength.innerHTML = "1:11:00";
+            release.innerHTML = "Feb 16, 2018";
+            genre.innerHTML = "Indie Rock";
+        }
+    }
 }
