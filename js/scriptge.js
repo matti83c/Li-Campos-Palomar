@@ -81,7 +81,7 @@ function output(oval){
     out.style.opacity = 1;
     out.style.pointerEvents = "unset";
     chooser.remove();
-    cap.remove();
+    cap.innerHTML = "Your result: "
 
     if(not != 1 && is == 1){ 
             chooser.remove();

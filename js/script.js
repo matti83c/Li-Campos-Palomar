@@ -211,7 +211,7 @@ function output(oval){
     out.style.opacity = 1;
     out.style.pointerEvents = "unset";
     chooser.remove();
-    cap.remove();
+    cap.innerHTML = "Your result: "
     if(sel == 1){
         if(oval == 2 || oval == 202){ //like bts
             chooser.remove();
