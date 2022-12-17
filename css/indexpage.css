@@ -55,13 +55,13 @@ hr{
     opacity: 0.04;
     transition-delay: -1s;
     transition: 1s;
-    animation: slide 60s linear infinite;
+    animation: slide 120s linear infinite;
 }
 
 #con2{
     margin-left: -8px;
     overflow: hidden;
-    height: 100%;
+    min-height: 130%;
     width: 100%;
     position:absolute;
 }
@@ -86,6 +86,53 @@ a{
     animation-fill-mode: forwards;
 }
 
+.find{
+    opacity: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    animation: fadeIn 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    width: 570px;
+    height: 180px;
+}
+
+.fantano{
+    background-image: url('../images/spritesheet.png');
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.rym{
+    background-image: url('../images/spritesheet.png');
+    height: 150px;
+    width: 150px;
+    background-position-x: -150px;
+    float: left;
+    margin: 20px;
+    margin-top: 5px;
+}
+
+.aoty{
+    background-image: url('../images/spritesheet.png');
+    height: 150px;
+    width: 150px;
+    background-position-x: -300px;
+    float: left;
+    margin: 20px;
+    margin-top: 5px;
+}
+
+.fantitle, .aotytitle, .rymtitle{
+    width: 190px;
+    float: left;
+    text-align: center;
+}
 .navbutton{
     padding: 10px;
     margin: 40px;
@@ -95,6 +142,18 @@ a{
 .navbutton:hover{
     color: #fff;
     transition: 0.3s;
+}
+
+.sources{
+    top: 50px;
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+
 }
 
 .text{
@@ -111,4 +170,14 @@ a{
     animation: fadeIn 1s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
+}
+
+footer{
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    bottom: -50px;
+    width: 100%;
 }

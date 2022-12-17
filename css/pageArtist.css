@@ -1,14 +1,53 @@
-*, *::before, *::after{
+*{
     color: #dcdcde;
     font-family: 'Comfortaa', cursive;
 }
 
 html{
-    background-color: #181825
+    background-color: #181825;
 }
 
-.output{
-    float:right;
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-3698px, -3698px, 0); /* The image width */
+    }
+}
+
+#content{
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center;
+}
+
+
+#bg{
+    position: absolute;
+    z-index: -1;
+    background-image: url("../images/topster.png");
+    background-repeat: repeat;
+    height: 11094px;
+    width: 11094px;
+    opacity: 0.04;
+    transition: 1s;
+    animation: slide 120s linear infinite;
+}
+
+#con2{
+    z-index: -10;
+    margin-left: -12px;
+    overflow: hidden;
+    height: 110%;
+    width: 100%;
+    position:absolute;
+}
+
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 a{    
@@ -16,31 +55,82 @@ a{
     color: #a29bab
 }
 
+.title{
+    font-size: 40px;
+}
+
+#question{
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.buttons{
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+header{
+    height: 75px;
+    margin: -12px;
+    background-color: #1e1e2e;
+}
+
 .nav{
-    padding-left: 100px;
+    margin: -12px;
+    margin-right: -18px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 30px;
+    background-color: #111117;
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.title{
+    opacity: 0;
+    animation-delay: 1s;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+    transition: 0.3s;
+}
+
+.preload * {
+    transition: none !important;
+}
+
+.output{
+    opacity: 0;
+    transition-delay: 1s;
+    transition: 1s;
+    pointer-events: none
 }
 
 .navbutton{
-    padding: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border: 5px solid #eee9f3;
-    border-radius: 18px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-top: 10px;
-    background-color: #1e1e2e;
+    padding: 10px;
+    margin: 40px;
     transition: 0.3s;
-    display:inline-block;
 }
 
 .navbutton:hover{
-    padding: 40px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #000000; /* color not final, just for testing */
+    color: #fff;
     transition: 0.3s;
-    margin-left: 0px;
-    margin-right: -4px;
-    margin-top: 0px;
+}
+
+.button{
+    color:#eee9f3;
+    background-color: #0c0c14;
+    padding: 10px;
+}
+
+#chooser{
+    opacity: 1;
+    transition: 0.5s;
 }
