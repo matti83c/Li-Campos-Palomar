@@ -199,9 +199,10 @@ header{
     text-align: center;
 }
 
-nav{
-    padding-top: 50px;
-    padding-bottom: 0px;
+.fantano:hover, .rym:hover, .aoty:hover{
+    transform: scale(110%);
+    margin-top: 5px;
+    transition: 0.3s;
 }
 
 body{

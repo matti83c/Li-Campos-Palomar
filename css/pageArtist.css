@@ -199,6 +199,11 @@ footer{
     text-align: center;
 }
 
+.fantano:hover, .rym:hover, .aoty:hover{
+    transform: scale(110%);
+    margin-top: 5px;
+    transition: 0.3s;
+}
 
 body{
     margin: 0;
