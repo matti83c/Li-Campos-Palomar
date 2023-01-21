@@ -23,7 +23,7 @@
 
 	<div id="con2">
 		<div id="bg"></div>
-	</div>
+	
 	
 	<nav class="nav">
 		<a href=../index.html class="navbutton">HOME</a>
@@ -34,12 +34,12 @@
 	
 	<div id="content">
 
-	<h2 class="title"> What do you want in an artist? </h2>
+	<h2 class="title" id="title"> What do you want in an artist? </h2>
 
 	<div id="chooser">
 		<div id="question">Which genre do you prefer?</div>
 		<div class="buttons">
-			<button class="button" id="1" onClick ="onClick1()">Pop</button> <!-- adds 1 alval -->
+			<button class="button" id="1" onClick ="onClick()">Pop</button>
 			<button class="button" id="2" onClick ="onClick100()">Hiphop</button> <!-- adds 100 alval -->
 			<button class="button" id="3" onClick ="Sel3()">Indie</button> <!-- for the first question -->
 			<button class="button" id="4" onClick ="Sel4()">RnB</button> <!-- for the first question -->
@@ -47,14 +47,30 @@
 		</div>
 	</div>
 
-	<div class="output">
+	<div class="output" id="output">
 		<h1 id="artist"> Artist name</h1>
 		<img src="../images/placeholder.jpg" alt="placeholder" width="300" height="300" id="pic">
 		<h3 id="genre"> Rnb </h3>
 		<h4 id="years"> Active 1999-present</h4>
 	</div>
-
+</div>
+<div class="find">
+	<h2>Find more music:</h3>
+	<div class="fantitle">Theneedledrop
+	<a class="fantano" href="https://www.youtube.com/user/theneedledrop"></a></div>
+	<div class="rymtitle">rateyourmusic.com
+	<a class="rym" href="https://rateyourmusic.com"></a></div>
+	<div class="aotytitle">albumoftheyear.org<a class="aoty" href="albumoftheyear.org"></a></div>
+</div>
+<footer>
+	<div class="sources">
+		Sources: <a href="https://www.youtube.com/user/theneedledrop">theneedledrop</a>, <a href="https://rateyourmusic.com">rateyourmusic</a>, <a href="https://albumoftheyear.org">albumoftheyear.</a><br>
+		Background image created using <a href="https://www.neverendingchartrendering.org/"> neverendingchartrendering.org</a>
+	</div>
+</footer>
 </body>
+
+
 
 <script type="text/javascript" src="../js/scriptar.js"></script>
 

@@ -61,7 +61,8 @@ hr{
 #con2{
     margin-left: -8px;
     overflow: hidden;
-    min-height: 130%;
+    min-height: 100%;
+    max-height: auto;
     width: 100%;
     position:absolute;
 }
@@ -173,11 +174,16 @@ a{
 }
 
 footer{
+    bottom: 10px;
     opacity: 0;
     animation: fadeIn 1s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
     position: relative;
-    bottom: -50px;
     width: 100%;
+}
+
+
+body{
+    margin: 0;
 }
